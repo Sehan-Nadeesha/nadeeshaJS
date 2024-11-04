@@ -63,11 +63,13 @@ body {
   align-items: center;
   border: 3px solid var(--secondary-colour);
   transition: 0.6s ease;
+  cursor: pointer;
 
 }
 
 .circle.active {
   border: 3px solid var(--main-colour);
+  color: var(--main-colour);
 }
 
 .btn {
@@ -90,4 +92,12 @@ body {
 .btn:disabled {
   background-color: var(--secondary-colour);
   cursor: not-allowed;
+}
+
+.finish {
+  background-color: #fff;
+  letter-spacing: 1px;
+  border: 2px solid var(--main-colour);
+  color: var(--main-colour);
+  transform: scale(0.98);
 }

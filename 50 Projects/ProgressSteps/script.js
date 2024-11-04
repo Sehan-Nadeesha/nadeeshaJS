@@ -21,6 +21,13 @@ prev.addEventListener('click', () => {
   update();
 })
 
+circles.forEach((circle, index) => {
+  circle.addEventListener('click', function () {
+    currentActive = index + 1;
+    update();
+  })
+})
+
 function update() {
   circles.forEach((circle, index) => {
     if (index < currentActive) {
@@ -36,10 +43,15 @@ function update() {
 
   if (currentActive === 1) {
     prev.disabled = true
+    next.innerHTML = 'Next';
+    next.classList.remove('finish');
   } else if (currentActive === circles.length) {
-    next.disabled = true;
+    next.innerHTML = 'Finish';
+    next.classList.add('finish');
   } else {
     prev.disabled = next.disabled = false
+    next.innerHTML = 'Next';
+    next.classList.remove('finish');
   }
 
 
