@@ -1,0 +1,92 @@
+* {
+  font-family: 'Segoe UI', 'sans-serif';
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3494e4;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border-radius: 0 0 40px 40px;
+  border: 4px solid #144fc6;
+  color: #144fc6;
+  height: 250px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  overflow: hidden;
+
+}
+
+.cup.cup-small {
+  font-size: 18px;
+  height: 95px;
+  width: 50px;
+  border: 2px solid #144fc6;
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+  margin: 10px;
+}
+
+.cup.cup-small.fill {
+  background-color: #6ab3f8;
+  color: #fff;
+}
+
+.cups {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.remained {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+  transition: 0.3s ease;
+
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: #6ab3f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  height: 0;
+}
