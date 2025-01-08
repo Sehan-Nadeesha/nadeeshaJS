@@ -1,0 +1,97 @@
+* {
+  font-family: 'Segoe UI', 'sans-serif';
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(226, 160, 73);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: burlywood;
+  border: none;
+  border-radius: 10px;
+  color: #555;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 25px 40px rgba(0, 0, 0, 0.2);
+
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  min-width: 500px;
+  max-width: 800px;
+  background-color: burlywood;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 25px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 1rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid rgb(226, 160, 73);
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repos {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(226, 160, 73);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 5px;
+}
