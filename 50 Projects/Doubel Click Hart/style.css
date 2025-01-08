@@ -1,0 +1,51 @@
+* {
+  font-family: 'Segoe UI', 'sans-serif';
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  overflow: hidden;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url('https://th.bing.com/th/id/OIP.tmU7SlO8Z44ySLJ79SxKMAHaLD?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(6);
+    opacity:
+      0;
+  }
+}
