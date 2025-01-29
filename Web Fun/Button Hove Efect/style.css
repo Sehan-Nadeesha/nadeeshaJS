@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-weight: 900;
+  padding: 1.25rem 2rem;
+  font-size: 1rem;
+  border-radius: 3.5rem/100%;
+  min-width: 15rem;
+  position: relative;
+  max-width: 90vw;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: all 330ms;
+}
+
+.btn+.btn {
+  margin-top: 1rem;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  background-color: #21d4fd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(4) translateX(-100%);
+}
+
+.btn:hover:before,
+.btn:focus:before,
+.btn:active:before {
+  transform: scale(4) translateX(37%);
+}
+
+.btn-alfa {
+  background-color: #21d4fd;
+  color: #b721ff;
+}
+
+.btn-alfa:before {
+  background-color: #b721ff;
+  background-image: linear-gradient(to right, #b721ff 30%, #21d4fd 100%);
+  position: absolute;
+}
+
+.btn-alfa:hover,
+.btn-alfa:active,
+.btn-alfa:focus {
+  color: #21d4fd;
+}

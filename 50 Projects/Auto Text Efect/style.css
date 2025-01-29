@@ -1,0 +1,36 @@
+* {
+  font-family: 'Segoe UI', 'sans-serif';
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+div {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 18px;
+
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: darksalmon;
+  text-align: center;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
