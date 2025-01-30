@@ -21,7 +21,7 @@ function writing() {
 }
 function deleting() {
   if (idx == 1) {
-    setTimeout(writing, 2000)
+    setTimeout(writing, 500)
   } else {
     textEl.innerText = text.slice(0, idx);
     idx--
